@@ -19,7 +19,7 @@ header {
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
-    background-color: var(--main-color);
+    background-color: #3f5353;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
 }
@@ -100,7 +100,7 @@ h2 {
     margin-left: 10px;
     padding: .3rem;
     margin: 0;
-    background-color: #759090;
+    background-color: #3f5353;
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -139,7 +139,7 @@ h2 {
 
 /*-----------FOOTER------------*/
 footer {
-    background-color: var(--main-color);
+    background-color: #3f5353;
     padding: 1rem 10px;
     text-align: center;
 }
