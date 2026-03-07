@@ -1,8 +1,25 @@
+:root {
+    --main-color: #759090;
+    --secondary-color: #fef6dd;
+    --tertiary-color: #b99c8b;
+    --yellow-horse: #fff1b5;
+    --green-thumb: #7c8377;
+}
+
+/*-----------BODY------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------HEADER------------*/
+
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
+    background-color: var(--main-color);
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
 }
@@ -15,26 +32,29 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: black
+    color: white;
 }
+
+/*-----------HAMBURGER------------*/
 
 .hamburger {
     background: none;
     border: none;
-    color: black;
     cursor: pointer;
 }
 
 .hamburger::before {
     content: "\2630";
     font-size: 2rem;
+    color: white;
 }
 
 .hamburger.show::before {
     content: "\00D7";
+    color: white;
 }
 
-/*nav bar*/
+/*-----------NAV------------*/
 .navigation {
     display: none;
 }
@@ -47,6 +67,7 @@ header span {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    justify-content: space-evenly;
 }
 
 .navigation a {
@@ -54,24 +75,71 @@ header span {
     padding: .8rem 10px;
     color: black;
     text-decoration: none;
-    border-bottom: solid 1px;
 }
 
-.navigation li.current {
-    background-color: #ddd;
+.current {
+    background-color: #eee;
 }
 
 .navigation a:hover {
-    background-color: bisque;
+    background-color: #ddd;
 }
 
 h1 {
-    margin-left: 10px;
+    padding: .5rem;
+    margin: 0;
+    text-align: center;
 }
 
-/*footer*/
-footer {
+/*-----------MAIN------------*/
+main {
     background-color: #eee;
+}
+
+h2 {
+    margin-left: 10px;
+    padding: .3rem;
+    margin: 0;
+    background-color: #759090;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+/*-----------CARDS------------*/
+
+.about-me p {
+    text-align: center;
+    padding: 1.7rem;
+}
+
+.about-me {
+    background-color: #ddd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.my-picture {
+    background-color: #ddd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.my-picture img {
+    display: block;
+    margin: 0 auto;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/*-----------FOOTER------------*/
+footer {
+    background-color: var(--main-color);
     padding: 1rem 10px;
     text-align: center;
 }
@@ -86,7 +154,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: red 1px;
     width: 44px;
     height: 44px;
 }
@@ -98,4 +165,9 @@ footer {
 
 .social a:hover {
     background-color: #ddd;
+}
+
+footer span,
+footer p {
+    color: white;
 }

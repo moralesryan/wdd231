@@ -23,8 +23,31 @@
         text-align: center;
     }
 
-    .about-me {
+    .about-me p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
         text-align: center;
+    }
+
+    .about-me {
+        background-color: #ddd;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .my-picture {
+        background-color: #ddd;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .my-picture img {
+        display: block;
+        margin: 0 auto;
     }
 
     .navigation {
