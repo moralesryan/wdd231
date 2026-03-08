@@ -15,6 +15,9 @@
 
     <!--Java Script-->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/certificates.js" defer></script>
+    <script src="scripts/display-certificates.js" defer></script>
 
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,6 +58,15 @@
             </section>
             <section id="certs" class="certificates">
                 <h2>Web Certificate Courses</h2>
+                <div class="filters">
+                    <button id="all">All Courses</button>
+                    <button id="wdd">WDD Courses</button>
+                    <button id="cse">CSE Courses</button>
+                </div>
+
+                <div id="courses"></div>
+
+                <p class="credits">Total Credits: <span id="courseCounter"></span></p>
             </section>
         </div>
     </main>
@@ -66,8 +78,12 @@
             <a href="#"><img src="images/pinterest.svg" alt="Pinterest logo" width="16" height="16"></a>
         </div>
         <div>
-            <span id="currentyear ">Ryan Morales | Costa Rica</span>
-            <p id="lastModified"></p>
+            <p>
+                <span id="currentYear"></span> Ryan Morales | Costa Rica
+            </p>
+            <p>
+                Last Modified: <span id="lastModified"></span>
+            </p>
         </div>
     </footer>
 </body>

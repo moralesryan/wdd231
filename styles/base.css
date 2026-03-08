@@ -1,5 +1,5 @@
 :root {
-    --main-color: #759090;
+    --main-color: #3f5353;
     --secondary-color: #fef6dd;
     --tertiary-color: #b99c8b;
     --yellow-horse: #fff1b5;
@@ -19,7 +19,7 @@ header {
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
-    background-color: #3f5353;
+    background-color: var(--main-color);
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
 }
@@ -100,7 +100,7 @@ h2 {
     margin-left: 10px;
     padding: .3rem;
     margin: 0;
-    background-color: #3f5353;
+    background-color: var(--main-color);
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -137,9 +137,44 @@ h2 {
     padding-bottom: .5rem;
 }
 
+/*-----------CSE AND WDD BUTTONS------------*/
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.filters button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#courses {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+}
+
+#courses div {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.credits {
+    color: var(--main-color);
+}
+
 /*-----------FOOTER------------*/
 footer {
-    background-color: #3f5353;
+    background-color: var(--main-color);
     padding: 1rem 10px;
     text-align: center;
 }
