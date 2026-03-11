@@ -1,0 +1,36 @@
+{
+    "ward": {
+        "name": "Cartago",
+        "bishop": "Bishop Martin",
+        "location": "El Guark",
+        "activeMembers": 210
+    },
+    "newWardMembers": [
+        {
+            "familyName": "Melendez Family",
+            "movingDate": "August 11th 2025",
+            "numberOfFamilyMembers": 4,
+            "visitedByBishop": true,
+            "dad": {
+                "name": "Luis",
+                "gender": "male",
+                "birthdate": "December, 23rd 1989"
+            },
+            "mom": {
+                "name": "Lisa",
+                "gender": "female",
+                "birthdate": "October, 10th 1993"
+            },
+            "son": {
+                "name": "Bily",
+                "gender": "male",
+                "birthdate": "May, 1st 2001"
+            },
+            "daughter": {
+                "name": "Viviana",
+                "gender": "female",
+                "birthdate": "June, 1st 2004"
+            }
+        }
+    ]
+}
