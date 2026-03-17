@@ -1,0 +1,69 @@
+{
+    "companies": [
+        {
+            "company 1": {
+                "companyName": "Gollo ",
+                "companyAddress": "112 Paraiso St",
+                "phoneNumber": "+506 2574-4476",
+                "website": "https://www.gollo.com/?srsltid=AfmBOoqgMDEUWhIE00PauMFrIT_u7KKoxGasfecGo_dNuz6L9dDVtxJG",
+                "image": "https://grupounicomer.com/gollo/",
+                "membershipLevel": "Gold",
+                "otherInfo": "Store"
+            },
+            "company 2": {
+                "companyName": "Orocay Bistro",
+                "companyAddress": "Calvario St",
+                "phoneNumber": "+506 2573 1284",
+                "website": "https://www.facebook.com/RestauranteOrocayBistro/?locale=es_LA",
+                "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/89/96/a1/orocay-bistro.jpg?w=1400&h=-1&s=1",
+                "membershipLevel": "Silver",
+                "otherInfo": "Restaurant"
+            },
+            "company 3": {
+                "companyName": "Jardin Lankester",
+                "companyAddress": "Cerca de la Finca Tilito",
+                "phoneNumber": "+506 2511-7949",
+                "website": "https://jbl.ucr.ac.cr",
+                "image": "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqZZwg7Sb5280Pq-8W-ySqvACSzucBASvCjiYNTmjoX2-uICHUIAz4ASubAAT-KQQGVlyqHtT163KjG-XLOTmviICkLyfOgcyATe4mRmj7b9oo9WymOIV638IZ0isTJ3R0jyfBf=s1360-w1360-h1020",
+                "membershipLevel": "silver",
+                "otherInfo": "Recreational"
+            },
+            "company 4": {
+                "companyName": "Truchas Selva Madre",
+                "companyAddress": "Birrisito",
+                "phoneNumber": "+506 2574-5742",
+                "website": "https://www.tripadvisor.es/Attraction_Review-g309231-d7244309-Reviews-Truchas_Selva_Madre-Cartago_Province_of_Cartago.html",
+                "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/ad/9d/ee/truchas-selva-madre.jpg?w=800&h=-1&s=1",
+                "membershipLevel": "member",
+                "otherInfo": "Recreational"
+            },
+            "company 5": {
+                "companyName": "Hacienda Orosi",
+                "companyAddress": "Orosi",
+                "phoneNumber": "+506 2554-9182",
+                "website": "https://haciendaorosi.com/?fbclid=IwZXh0bgNhZW0BMABhZGlkAasvj1uL2IlzcnRjBmFwcF9pZAwzNTA2ODU1MzE3MjgAAR5yol5w7Cj44oOUFNGJzFmtcm-3yvVLEMKqi6tGvfqtpwpeeSdeBDQFlk7Tog_aem_OuqdYMQSwFuxB1Ovo-dbnA&utm_medium=paid&utm_source=fb&utm_id=120242107381340505&utm_content=120242107381350505&utm_term=120242107381360505&utm_campaign=120242107381340505",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7gQyIUYux8tVT4ISUZ3W6akUNEfMl92trw&s",
+                "membershipLevel": "Gold",
+                "otherInfo": "Recreational"
+            },
+            "company 6": {
+                "companyName": "Mirador de Ujarras",
+                "companyAddress": "Ujarras",
+                "phoneNumber": "+506 2576-7102",
+                "website": "https://es.visitcostarica.com/blog/see-mirador-ujarras",
+                "image": "https://es.visitcostarica.com/sites/default/files/legacy/blog/Ujarras/FOTO-BLOG-3.jpg",
+                "membershipLevel": "Member",
+                "otherInfo": "Recreational"
+            },
+            "company 7": {
+                "companyName": "Restaurante Las Orquideas",
+                "companyAddress": "La Joya",
+                "phoneNumber": "+506 2544-9019",
+                "website": "https://www.restorquideas.com",
+                "image": "https://lh3.googleusercontent.com/p/AF1QipMha6JnupAHAN3gKzSKquy2gp18d094qpSS8Zj4=s1360-w1360-h1020",
+                "membershipLevel": "Gold",
+                "otherInfo": "Restaurant"
+            }
+        }
+    ]
+}
