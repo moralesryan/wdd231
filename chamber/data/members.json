@@ -1,7 +1,7 @@
 {
-    "companies": [
+    "members": [
         {
-            "company 1": {
+            "member 1": {
                 "companyName": "Gollo ",
                 "companyAddress": "112 Paraiso St",
                 "phoneNumber": "+506 2574-4476",
@@ -10,7 +10,7 @@
                 "membershipLevel": "Gold",
                 "otherInfo": "Store"
             },
-            "company 2": {
+            "member 2": {
                 "companyName": "Orocay Bistro",
                 "companyAddress": "Calvario St",
                 "phoneNumber": "+506 2573 1284",
@@ -19,7 +19,7 @@
                 "membershipLevel": "Silver",
                 "otherInfo": "Restaurant"
             },
-            "company 3": {
+            "member 3": {
                 "companyName": "Jardin Lankester",
                 "companyAddress": "Cerca de la Finca Tilito",
                 "phoneNumber": "+506 2511-7949",
@@ -28,7 +28,7 @@
                 "membershipLevel": "silver",
                 "otherInfo": "Recreational"
             },
-            "company 4": {
+            "member 4": {
                 "companyName": "Truchas Selva Madre",
                 "companyAddress": "Birrisito",
                 "phoneNumber": "+506 2574-5742",
@@ -37,7 +37,7 @@
                 "membershipLevel": "member",
                 "otherInfo": "Recreational"
             },
-            "company 5": {
+            "member 5": {
                 "companyName": "Hacienda Orosi",
                 "companyAddress": "Orosi",
                 "phoneNumber": "+506 2554-9182",
@@ -46,7 +46,7 @@
                 "membershipLevel": "Gold",
                 "otherInfo": "Recreational"
             },
-            "company 6": {
+            "member 6": {
                 "companyName": "Mirador de Ujarras",
                 "companyAddress": "Ujarras",
                 "phoneNumber": "+506 2576-7102",
@@ -55,7 +55,7 @@
                 "membershipLevel": "Member",
                 "otherInfo": "Recreational"
             },
-            "company 7": {
+            "member 7": {
                 "companyName": "Restaurante Las Orquideas",
                 "companyAddress": "La Joya",
                 "phoneNumber": "+506 2544-9019",
