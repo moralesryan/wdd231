@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    margin: 1rem 0;
+    text-shadow: 0 0 30px;
+    font-size: 25px;
+}
+
+img {
+    width: auto;
+    height: 14rem;
+}
