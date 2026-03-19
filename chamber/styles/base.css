@@ -181,8 +181,11 @@ h2 {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
+    margin: .5rem;
     text-align: left;
 }
+
+
 
 #members.list section p,
 #members.list section a,
