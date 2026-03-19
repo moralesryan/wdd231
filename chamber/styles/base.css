@@ -116,6 +116,11 @@ h2 {
     margin: 0 auto;
 }
 
+.weather img {
+    width: 80px;
+    height: auto;
+}
+
 /*-----------CARDS------------*/
 
 .cards {
@@ -184,8 +189,6 @@ h2 {
     margin: .5rem;
     text-align: left;
 }
-
-
 
 #members.list section p,
 #members.list section a,
