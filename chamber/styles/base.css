@@ -1,7 +1,7 @@
 :root {
     --main-color: #3f5353;
-    --secondary-color: #fef6dd;
-    --tertiary-color: #b99c8b;
+    --secondary-color: #edece7;
+    --tertiary-color: #6f6763;
     --yellow-horse: #fff1b5;
     --green-thumb: #7c8377;
 }
@@ -124,15 +124,109 @@ h2 {
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border: 1px solid var(--tertiary-color);
+
 }
 
-.bus-cards {
-    background-color: #ddd;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+
+#members.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
 }
+
+#members.list {
+    display: block;
+    padding: 1rem;
+}
+
+#members section {
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--tertiary-color);
+}
+
+#members h3 {
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+#members a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+#members a:hover {
+    background-color: var(--green-thumb);
+}
+
+#members img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#members.list section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+#members.list section p,
+#members.list section a,
+#members.list section h3 {
+    margin: 0;
+}
+
+#members.list img {
+    display: none;
+}
+
+.membership-level {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+/*-----------BUTTONS------------*/
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.menu button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+}
+
+.menu button.active {
+    background-color: var(--tertiary-color);
+}
+
+#members section:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
 
 /*-----------FOOTER------------*/
 footer {

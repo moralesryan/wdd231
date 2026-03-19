@@ -7,7 +7,7 @@ async function getMembers() {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        displayMembers(data.companies);
+        displayMembers(data.members);
     } catch (error) {
         console.error("Error fetching member data:", error);
     }
@@ -25,21 +25,21 @@ const displayMembers = (members) => {
         let phone = document.createElement("p");
         let website = document.createElement("a");
         let level = document.createElement("p");
-        name.textContent = member.name;
-        address.textContent = member.address;
-        phone.textContent = member.phone_number;
+        name.textContent = member.companyName;
+        address.textContent = member.companyAddress;
+        phone.textContent = member.phoneNumber;
 
         website.textContent = "Website";
         website.setAttribute("href", member.website);
         website.setAttribute("target", "_blank");
 
-        logo.setAttribute("src", `images/${member.imageurl}`);
-        logo.setAttribute("alt", `${member.name} logo`);
+        logo.setAttribute("src", `images/${member.image}`);
+        logo.setAttribute("alt", `${member.companyName} logo`);
         logo.setAttribute("loading", "lazy");
 
 
         level.className = "membership-level";
-        level.textContent = `Level – ${member.level}`;
+        level.textContent = `Level ${member.membershipLevel}`;
 
         section.appendChild(logo);
         section.appendChild(name);
