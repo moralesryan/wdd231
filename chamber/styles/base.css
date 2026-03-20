@@ -47,12 +47,12 @@ header span {
 .hamburger::before {
     content: "\2630";
     font-size: 2rem;
-    color: white;
+    color: var(--main-color);
 }
 
 .hamburger.show::before {
     content: "\00D7";
-    color: white;
+    color: var(--main-color);
 }
 
 /*-----------NAV------------*/
@@ -130,7 +130,6 @@ h2 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid var(--tertiary-color);
-
 }
 
 
@@ -225,7 +224,8 @@ h2 {
 }
 
 .menu button.active {
-    background-color: var(--tertiary-color);
+    background-color: white;
+    color: #3f5353;
 }
 
 #members section:hover {
