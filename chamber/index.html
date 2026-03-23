@@ -19,13 +19,17 @@
     <meta property="og:description"
         content="Paraiso Chamber of Commerce website is a page dedicated to honor local businesses and promote community engagement.">
     <!--image-->
-    <meta property="og:image" content="https://www.tripadvisor.es/Tourism-g309230-Province_of_Cartago-Vacations.html">
+    <meta property="og:image" content="https://moralesryan.github.io/wdd231/chamber/images/og-image.jpg">
     <!--url-->
     <meta property="og:url" content="https://moralesryan.github.io/wdd231/chamber/directory.html">
+    <!--type-->
+    <meta property="og:type" content="website">
     <!--link to JS and CSS-->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/business.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <!--Fonts-->
@@ -44,44 +48,46 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Directory</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
         <h1>Home</h1>
-        <section class="hero">
-            <!--Hero image right here-->
-            <img src="images/hero-img.jpg" alt="Mirador de Orosi, Paraiso" loading="lazy">
-        </section>
-
         <div class="cards">
-            <section>
-                <h2>Events</h2>
+            <section class="hero">
+                <!--Hero image right here-->
+                <img src="images/hero-img.jpeg" alt="Tren de Paraiso" loading="lazy">
+                <button id="cta" class="call-to-action">Join the Chamber</button>
             </section>
-            <section class="weather" id="weather">
-                <h2>Current Weather</h2>
-                <p><strong>Temperature:</strong> 20°C</p>
-                <p><strong>Conditions:</strong>Sunny</p>
-                <p><strong>Wind:</strong> 10km/h</p>
-                <p><strong>Wind Chill:</strong> 9.1°C</p>
-                <img src="images/weather.svg" alt="Weather logo">
-            </section>
-            <section>
-                <h2>Weather Forecast</h2>
-                <p><strong>Today:</strong> 90℉</p>
-                <p><strong>Wednesday:</strong> 89℉</p>
-                <p><strong>Thursday:</strong> 68℉</p>
-            </section>
-        </div>
-        <div class="menu">
-            <button id="btnGrid">Grid View</button>
-            <button id="btnList">List View</button>
-        </div>
 
-        <div id="members" class="grid"></div>
+            <h2>Events</h2>
+            <section id="spotlights">
+                <h2>Member Spotlights</h2>
+                <!--Spotlights right here-->
+            </section>
+
+            <div class="weather-cards">
+                <section id="weather">
+                    <h2>Current Weather</h2>
+                    <p>Temperature: <span id="current-temp"></span></p>
+                    <p>Condition: <span id="current-desc"></span></p>
+
+                    <img src="images/weather.svg" alt="Weather logo" width="70" height="70">
+                </section>
+
+                <section id="weather">
+                    <h2>3-Day Forecast</h2>
+                    <ul class="weather-forecast">
+                        <li id="day1"></li>
+                        <li id="day2"></li>
+                        <li id="day3"></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="contact-info">
