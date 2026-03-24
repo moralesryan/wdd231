@@ -200,6 +200,24 @@ h2 {
     display: block;
 }
 
+/*--------EVENTS---------*/
+
+.placeholder {
+    padding: 80px;
+    margin-bottom: 30px;
+    background: #eee;
+    border: 2px dashed #ccc;
+    display: flex;
+    color: #777;
+    font-size: 14px;
+}
+
+.events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 /*--------CALL TO ACTION---------*/
 .call-to-action {
