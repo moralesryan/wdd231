@@ -96,4 +96,44 @@ document.querySelector("#cse").addEventListener("click", () => {
     displayCourses(cseCourses);
 });
 
+
+const courseDiv = document.querySelector('#courses');
+const courseDetails = document.querySelector('#course-details');
+const openModal = document.querySelector('#open-button');
+
+function displayCourses(courseList) {
+    courseDiv.innerHTML = '';
+
+    courseList.forEach(course => {
+        const card = document.createElement('div');
+        card.classList.add('course-card');
+        card.innerHTML = `
+      <h3>${course.subject} ${course.number}</h3>
+      <p>${course.title}</p>
+    `;
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
+        courseDiv.appendChild(card);
+    });
+}
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+            <button id = 'close-button' > Close</button >
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p>Credits: ${course.credits}</p>
+        <p>Description: ${course.description}</p>
+        <p>Certificate: ${course.certificate}</p>
+        <p>Technologies: ${course.technology.join(', ')}</p>
+        `;
+    courseDetails.showModal();
+
+    document.querySelector('#close-button').addEventListener('click', () => {
+        courseList.close();
+    });
+}
+
 displayCourses(courses)
