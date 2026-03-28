@@ -137,6 +137,21 @@ h2 {
     padding-bottom: .5rem;
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: slideIn 1.5s 
+
+}
+
 /*-----------CSE AND WDD BUTTONS------------*/
 .filters {
     display: flex;

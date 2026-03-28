@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+@keyframes slideIn {
   from {
     opacity: 0;
   }
@@ -9,23 +9,24 @@
 }
 
 .box {
-  animation: fadeIn 3s;
+  animation: slideIn 3s;
   transition: background-color 0.5s ease-in-out 0.5s, color 0.5s ease-in-out 0.5s;
-  transform: scale(1.2);
+  transform: translateY(5em);
 }
 
+/*
 .box:hover {
   background-color: black;
   color: white;
 }
 
 @keyframes fadeColor {
-  from {
+  0% {
     background-color: red;
   }
 
-  to {
-    background-color: yellow;
+  100% {
+    background-color: rgb(119, 119, 102);
   }
 }
 
@@ -67,7 +68,6 @@
     transform: translate(-50%, -50%) scale(1);
   }
 
-  /* scale to 1 */
   50% {
     transform: translate(-50%, -50%) scale(1.25);
   }
@@ -91,7 +91,6 @@
   transform: translate(-50%, -50%) scale(1.5);
 }
 
-/*-----------------------*/
 nav a {
   flex: 1 1 100%;
   display: block;
@@ -108,3 +107,4 @@ a:focus {
   color: #000;
   transition: all 1.5s ease-in-out 1.5s;
 }
+*/
