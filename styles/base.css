@@ -148,8 +148,7 @@ h2 {
 }
 
 section {
-    animation: slideIn 1.5s 
-
+    animation: slideIn 1.5s
 }
 
 /*-----------CSE AND WDD BUTTONS------------*/
@@ -244,3 +243,7 @@ footer span,
 footer p {
     color: white;
 }
+
+/*-----------JOIN PAGE------------*/
+
+form
