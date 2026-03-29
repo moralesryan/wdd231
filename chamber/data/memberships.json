@@ -1,0 +1,56 @@
+{
+    "memberships": [
+        {
+            "level": "Non Profit Membership",
+            "details": [
+                "Business listing in the directory (basic info only)",
+                "Access to community events",
+                "Ability to post events to the chamber calendar",
+                "Volunteer & partnership opportunities",
+                "Newsletter inclusion (grouped section)",
+                "Limited access to training resources"
+            ]
+        },
+        {
+            "level": "Bronze Membership",
+            "details": [
+                "Everything in Non-Profit, plus:",
+                "Featured listing in directory (with logo + short description)",
+                "Access to basic training workshops (marketing, finance, etc.)",
+                "Invitations to networking events",
+                "Social media mention (occasional)",
+                "Member badge for their website",
+                "Discounts on chamber-hosted events"
+            ]
+        },
+        {
+            "level": "Silver Membership",
+            "details": [
+                "Everything in Bronze, plus:",
+                "Priority placement in business directory",
+                "Spotlight feature (e.g., “Business of the Week/Month”)",
+                "Ability to publish blog posts or promotions on the chamber site",
+                "Access to advanced training sessions or webinars",
+                "Increased event discounts",
+                "Access to member-only networking events",
+                "Job postings or classifieds on the site",
+                "Email newsletter feature (dedicated highlight)"
+            ]
+        },
+        {
+            "level": "Gold Membership",
+            "details": [
+                "Everything in Silver, plus:",
+                "Homepage spotlight / rotating banner feature",
+                "Top placement in search results & directory",
+                "Sponsorship opportunities at events",
+                "Speaking opportunities at chamber events",
+                "Dedicated account support or business advisor",
+                "Premium advertising slots (homepage, emails, etc.)",
+                "Exclusive invites to VIP events",
+                "First access to partnerships, grants, or programs",
+                "Ability to host chamber events or workshops"
+            ]
+        }
+    ]
+}
