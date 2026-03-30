@@ -361,10 +361,7 @@ footer p {
     padding: 2rem;
 }
 
-select {
-    padding: 0.5rem;
-    border-radius: 4px;
-}
+
 
 .form-section {
     flex: 1;
@@ -491,7 +488,7 @@ form label {
     padding: .4rem;
 }
 
-.contact p{
+.contact p {
     margin-bottom: 2rem;
 }
 
