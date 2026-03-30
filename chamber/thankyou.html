@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! - Paraiso Chamber of Commerce </title>
+
+    <meta name="description"
+        content="Chamber home page is where some information about my city's commerces is displayed, a menu for other pages.">
+    <meta name="author" content="Ryan Morales | WDD 231">
+    <!--FavIcon-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--Social Media meta tags-->
+    <!--title-->
+    <meta property="og:title" content="Ryan Morales | WDD231 Paraiso Chamber Page">
+    <!--description-->
+    <meta property="og:description"
+        content="Paraiso Chamber of Commerce website is a page dedicated to honor local businesses and promote community engagement.">
+    <!--image-->
+    <meta property="og:image" content="https://moralesryan.github.io/wdd231/chamber/images/og-image.jpg">
+    <!--url-->
+    <meta property="og:url" content="https://moralesryan.github.io/wdd231/chamber/directory.html">
+    <!--type-->
+    <meta property="og:type" content="website">
+    <!--link to JS and CSS-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/last-modified.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Paraiso logo">
+        <span>Paraiso Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="thankyou-section">
+            <h1>Thank you for submitting your membership form!</h1>
+
+            <section>
+                <h2><strong>HERE'S WHAT YOU ENTERED:</strong></h2>
+            </section>
+            <div id="form-data">
+            </div>
+        </section>
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const fields = ["name", "last-name", "email", "phone number", "business/organization name", "membership level"];
+            let output = "";
+            fields.forEach(f => {
+                if (params.has(f)) {
+                    output += `<p><strong>${f.toUpperCase()}:</strong> ${params.get(f)}</p>`;
+                }
+            });
+            document.getElementById("form-data").innerHTML = output;
+        </script>
+
+        <div class="contact">
+            <p><strong>WE WILL BE IN CONTACT WITH YOU WITHIN THE NEXT 24 HOURS!</strong></p>
+        </div>
+
+        <footer>
+            <div class="contact-info">
+
+            </div>
+            <div class="social">
+                <a href="#"><img src="images/discord.svg" alt="Discord logo" width="16" height="16"></a>
+                <a href="#"><img src="images/github.svg" alt="GitHub logo" width="16" height="16"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16"></a>
+                <a href="#"><img src="images/pinterest.svg" alt="Pinterest logo" width="16" height="16"></a>
+            </div>
+            <div class="wdd-info">
+                <span>WDD 231 Class Project</span>
+                <span>Ryan Morales</span>
+                <span id="currentDates"></span>
+                <span id="lastModified"></span>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
