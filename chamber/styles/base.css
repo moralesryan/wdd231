@@ -127,11 +127,10 @@ h2 {
 }
 
 #members section {
-    background-color: #ddd;
+    background-color: white;
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
-    border: 1px solid var(--tertiary-color);
 }
 
 #members h3 {
@@ -362,6 +361,11 @@ footer p {
     padding: 2rem;
 }
 
+select {
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
 .form-section {
     flex: 1;
     max-width: 700px;
@@ -372,7 +376,7 @@ footer p {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    animation: slideUp 1.5s;
+    animation: slideUp 1.5s; 
 }
 
 label {
@@ -385,12 +389,15 @@ select {
     background-color: var(--main-color);
     color: white;
     border: none;
+    border-radius: 10px;
+    padding: .5rem;
+    text-align: center;
 }
 
 .submit-button {
     display: block;
     margin: 1rem;
-    padding: 1rem;
+    padding: .7rem;
     background-color: var(--main-color);
     color: white;
     border: none;
@@ -399,10 +406,8 @@ select {
 
 .mcards {
     flex: 2;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
-    max-width: 20rem;
+    max-width: 45rem;
 }
 
 .membership-card {
@@ -414,6 +419,10 @@ select {
     margin: 1rem;
     animation: slideUp 1.5s;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.membership-card:first-child {
+    margin-top: 0;
 }
 
 .membership-card .info-link {
