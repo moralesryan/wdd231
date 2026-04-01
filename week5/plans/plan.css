@@ -1,0 +1,37 @@
+:root {
+    --main-color: #044389;
+    --secondary-color: #BFDBF7;
+    --tertiary-color: #E1E5F2;
+    --color-accent: #FFFFFF;
+    --background-color: #985F6F;
+    font-family: 'Google Sans', sans-serif;
+}
+
+.header-class {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.navigation {
+    background-color: var(--background-color);
+    color: var(--color-accent);
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-class {
+    background-color: var(--background-color);
+    color: var(--color-accent);
+    text-align: center;
+    padding: 4rem;
+
+}
+
+.foot {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    text-align: center;
+    padding: 2rem;
+}
