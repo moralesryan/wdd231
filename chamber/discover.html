@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paraiso Chamber of Commerce</title>
+    <title>Discover Page | Paraiso Chamber of Commerce</title>
 
-    <meta name="description"
-        content="Chamber home page is where some information about my city's commerces is displayed, a menu for other pages.">
+    <meta name="description" content="">
     <meta name="author" content="Ryan Morales | WDD 231">
     <!--FavIcon-->
     <link rel="icon" href="images/favicon.ico">
@@ -27,9 +26,8 @@
     <!--link to JS and CSS-->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/last-modified.js" defer></script>
-    <script src="scripts/business.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <!--Fonts-->
@@ -48,51 +46,14 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li class="current"><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <main>
         <h1>Home</h1>
-        <div class="cards">
-            <section class="hero">
-                <h2>Join Us Now!</h2>
-                <!--Hero image right here-->
-                <img src="images/hero-img.jpeg" alt="Tren de Paraiso" loading="lazy">
-                <button id="cta" class="call-to-action" aria-label="Go to our Join us page">Join the Chamber</button>
-            </section>
-
-            <h2>Events</h2>
-            <section class="events">
-                <div class="placeholder">Events coming soon! 🚧</div>
-            </section>
-
-            <h2>Spotlights</h2>
-            <section id="spotlights">
-
-                <h2>Member Spotlights</h2>
-                <!--Spotlights right here-->
-            </section>
-
-            <div class="weather-cards">
-                <section id="weather">
-                    <h2>Current Weather</h2>
-                    <p>Temperature: <span id="current-temp"></span></p>
-                    <p>Condition: <span id="current-desc"></span></p>
-
-                    <img src="images/weather.svg" alt="Weather logo" width="70" height="70">
-
-                    <h2>3-Day Forecast</h2>
-                    <ul class="weather-forecast">
-                        <li id="day1"></li>
-                        <li id="day2"></li>
-                        <li id="day3"></li>
-                    </ul>
-                </section>
-            </div>
-        </div>
 
     </main>
     <footer>
