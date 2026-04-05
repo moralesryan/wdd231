@@ -492,9 +492,81 @@ form label {
     margin-bottom: 2rem;
 }
 
+/*-----------#PLACES------------*/
+
+#places section {
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "pic"
+        "address"
+        "text"
+        "boton";
+}
+
+#places h2 {
+    grid-area: title;
+    background-color: var(--tertiary-color);
+}
+
+#places figure {
+    grid-area: pic;
+}
+
+#places address {
+    grid-area: address;
+}
+
+#places p {
+    grid-area: text;
+}
+
+#places img {
+    box-shadow: 3px 3px 4px;
+
+}
+
+#places button {
+    grid-area: boton;
+    display: block;
+    margin: 1rem;
+    padding: .7rem;
+    background-color: var(--tertiary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+}
+
 /*-----------MEDIA QUERY------------*/
 
-@media (min-width: 38rem) {
+@media (max-width: 640px) {
+
+    #spotlights {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .spotlight-card {
+        flex: 1 1 30%;
+        max-width: 300px;
+    }
+
+    #places section {
+        grid-template-areas:
+            "title title"
+            "pic"
+            "address"
+            "text"
+            "boton"
+        ;
+    }
+}
+
+@media (min-width:641px) and (max-width: 1024px) {
+
     .navigation {
         display: block;
         border-bottom: solid 1px #eee;
@@ -508,19 +580,22 @@ form label {
         display: none;
     }
 
-    #spotlights {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    #places section {
+        grid-template-areas:
+            "title title"
+            "pic text"
+            "pic address"
+            "boton boton"
+        ;
     }
 
-    .spotlight-card {
-        flex: 1 1 30%;
-        max-width: 300px;
+    #places h2 {
+        background-color: #6f6763;
     }
+
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1025px) {
     .layout {
         display: block;
     }
@@ -528,4 +603,18 @@ form label {
     .membership-card:first-child {
         margin-top: 3rem;
     }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
 }
