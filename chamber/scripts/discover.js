@@ -21,7 +21,7 @@ const displayPlaces = (places) => {
         address.textContent = place.address;
         description.textContent = place.description;
 
-        img.setAttribute("src", `images/${place.image}`);
+        img.setAttribute("src", `chamber/images/${place.image}`);
         img.setAttribute("alt", `${place.name}`);
         img.setAttribute("loading", "lazy");
         img.style.width = "300px";
