@@ -96,7 +96,8 @@ main {
     background-color: #eee;
 }
 
-h2 {
+h2,
+#message {
     margin-left: 10px;
     padding: .3rem;
     margin: 0;
@@ -504,8 +505,10 @@ form label {
     grid-area: text;
 }
 
-#places img {
-    box-shadow: 3px 3px 4px;
+#places img:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 #places button {
@@ -519,6 +522,8 @@ form label {
     border-radius: 8px;
 
 }
+
+
 
 /*-----------MEDIA QUERY------------*/
 @media (min-width: 1025px) {

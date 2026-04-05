@@ -24,6 +24,8 @@ const displayPlaces = (places) => {
         img.setAttribute("src", `../images/${place.image}`);
         img.setAttribute("alt", `${place.name}`);
         img.setAttribute("loading", "lazy");
+        img.style.width = "300px";
+        img.style.height = "200px";
 
         learnMoreBtn.textContent = "Learn More"
 
@@ -40,3 +42,32 @@ const displayPlaces = (places) => {
 }
 
 displayPlaces(places);
+
+const welcomeMsg = document.querySelector('#message');
+
+function showMessage() {
+    const lastVisit = localStorage.getItem('lastVisit');
+    const now = Date.now();
+    let message = '';
+
+    if (!lastVisit) {
+        message = "Welcome to the Discover Page! ";
+
+    } else {
+        const diffInMiliseconds = now - parseInt(lastVisit);
+        const diffDays = Math.floor(diffInMiliseconds / (1000 * 60 * 60 * 24));
+        if (diffInMiliseconds < 1000 * 60 * 60 * 24) {
+            message = "Back so soon! Awesome!";
+        } else if (diffDays === 1) {
+            message = "You last visited 1 day ago";
+        } else {
+            message = `You last visited ${diffDays} days ago`;
+        }
+    }
+    welcomeMsg.textContent = message;
+
+    localStorage.setItem('lastVisit', now);
+
+}
+
+showMessage();
