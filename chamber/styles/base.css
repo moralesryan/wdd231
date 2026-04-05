@@ -102,8 +102,6 @@ h2 {
     margin: 0;
     background-color: var(--main-color);
     color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     text-align: center;
 }
 
@@ -166,12 +164,6 @@ h2 {
     padding: 1rem;
     margin: .5rem;
     text-align: left;
-}
-
-#members.list section p,
-#members.list section a,
-#members.list section h3 {
-    margin: 0;
 }
 
 #members.list img {
