@@ -540,61 +540,6 @@ form label {
 }
 
 /*-----------MEDIA QUERY------------*/
-
-@media (max-width: 640px) {
-
-    #spotlights {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .spotlight-card {
-        flex: 1 1 30%;
-        max-width: 300px;
-    }
-
-    #places section {
-        grid-template-areas:
-            "title title"
-            "pic"
-            "address"
-            "text"
-            "boton"
-        ;
-    }
-}
-
-@media (min-width:641px) and (max-width: 1024px) {
-
-    .navigation {
-        display: block;
-        border-bottom: solid 1px #eee;
-    }
-
-    .navigation ul {
-        display: flex;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    #places section {
-        grid-template-areas:
-            "title title"
-            "pic text"
-            "pic address"
-            "boton boton"
-        ;
-    }
-
-    #places h2 {
-        background-color: #6f6763;
-    }
-
-}
-
 @media (min-width: 1025px) {
     .layout {
         display: block;
@@ -616,5 +561,4 @@ form label {
     .hamburger {
         display: none;
     }
-
 }

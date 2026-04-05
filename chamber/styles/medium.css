@@ -1,0 +1,25 @@
+@media (min-width:641px) and (max-width: 1024px) {
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #places section {
+        grid-template-areas:
+            "title title"
+            "pic text"
+            "pic address"
+            "boton boton"
+        ;
+    }
+
+}

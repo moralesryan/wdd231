@@ -1,0 +1,23 @@
+@media (max-width: 640px) {
+
+    #spotlights {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .spotlight-card {
+        flex: 1 1 30%;
+        max-width: 300px;
+    }
+
+    #places section {
+        grid-template-areas:
+            "title title"
+            "pic"
+            "address"
+            "text"
+            "boton"
+        ;
+    }
+}
