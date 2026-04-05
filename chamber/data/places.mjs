@@ -9,7 +9,7 @@ export const places = [
         "name": "Mirador de Orosi",
         "address": "Orosi Valley, Paraíso, Cartago, Costa Rica",
         "description": "A scenic viewpoint overlooking the lush Orosi Valley, offering stunning panoramic views—especially at sunrise or sunset.",
-        "image": "../images/miradororosi.webp"
+        "image": "../images/mirador.webp"
     },
     {
         "name": "Irazú Volcano National Park",
