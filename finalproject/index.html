@@ -20,14 +20,16 @@
     <meta property="og:description"
         content="Hike Together is an initiative that offers guided tours for those with adventurous spirits. The platform will allow users to connect with other hikers and get to know the beautiful parts of Costa Rica. The goal is to foster a sense of community among hikers and encourage outdoor activities.">
     <!--image-->
-    <meta property="og:image" content="https://moralesryan.github.io/wdd231/finalproject/images/og-image.jpg">
+    <meta property="og:image" content="https://moralesryan.github.io/wdd231/finalproject/images/ogimage.jpg">
     <!--url-->
     <meta property="og:url" content="https://moralesryan.github.io/wdd231/finalproject/index.html">
     <!--type-->
     <meta property="og:type" content="website">
 
     <!--CSS-->
-
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
     <!--JS/MJS Files-->
 
     <!--Font-->
@@ -41,14 +43,14 @@
 <body>
 
     <header>
-        <img src="images/logo.svg" alt="Hike Together Logo">
+        <img src="images/logo.svg" alt="Hike Together Logo" loading="lazy" width="50" height="50">
         <span>Hike Together!</span>
-        <button class="ham-btn" id="ham-btn" aria-label="Open navigation menu"></button>
+        <button class="hamburger" id="ham-btn" aria-label="Open navigation menu"></button>
     </header>
 
     <nav class="navigation" id="navigation">
         <ul>
-            <li><a class="current">Home</a></li>
+            <li class="current"><a>Home</a></li>
             <li><a>Pathfinder</a></li>
             <li><a>Join Us</a></li><!--Join the Journey-->
         </ul>
@@ -57,35 +59,44 @@
     <main>
         <section class="hero">
             <h1>Hike Together!</h1>
-            <img src="images/hero1.jpg" alt="" loading="lazy" width="800" height="600">
+            <img src="images/hero1.jpg" alt="" loading="lazy" width="600" height="400">
             <p>
                 Welcome to Hike Together, an initiative that offers guided tours for those with adventurous spirits. If
                 you are a pro hiker or a beginner, we have the perfect tour for you! Our platform allows users to
-                connect with other hikers as we all hike together the beautiful trails of Costa Rica.
+                connect with other hikers as we all hike together the beautiful trails of Costa Rica. Our goal is to
+                foster a sense of community among hikers and encourage outdoor activities. Join us on this exciting
+                journey and explore the wonders of Costa Rica with like-minded adventurers.
             </p>
         </section>
         <section class="highlights">
-            <div class="hihglights-container">
+            <span>What We Offer</span>
+            <div class="highlights-container">
                 <div class="highlight">
                     <h2>Lets Hike Together</h2>
-                    <img src="images/image1.jpg" alt="" loading="lazy" width="800" height="600">
+                    <img src="images/image2.jpg" alt="" loading="lazy" width="220" height="140">
+                    <p>Join us for an unforgettable hiking experience!</p>
                 </div>
                 <div class="highlight">
                     <h2>Connect with others</h2>
-                    <img src="images/image2.jpg" alt="" loading="lazy" width="800" height="600">
+                    <img src="images/image1.jpg" alt="" loading="lazy" width="220" height="140">
+                    <p>Meet fellow hiking enthusiasts and share your adventures!</p>
                 </div>
                 <div class="highlight">
                     <h2>Explore Costa Rica</h2>
-                    <img src="images/image3.jpg" alt="" loading="lazy" width="800" height="600">
+                    <img src="images/image3.jpg" alt="" loading="lazy" width="220" height="140">
+                    <p>Discover the breathtaking landscapes of Costa Rica!</p>
                 </div>
                 <div class="highlight">
                     <h2>Join the Journey</h2>
-                    <img src="images/image4.jpg" alt="" loading="lazy" width="800" height="600">
+                    <img src="images/image4.jpg" alt="" loading="lazy" width="220" height="140">
+                    <p>Embark on a journey of adventure with us!</p>
                 </div>
             </div>
         </section>
 
         <section class="team">
+            <span>Get to know our Team</span>
+
             <div class="team-container">
                 <div class="team-member">
                     <h2>Team Member 1</h2>
@@ -127,10 +138,10 @@
         <div class="contact-info">
         </div>
         <div class="social">
-            <a href="#"><img src="images/discord.svg" alt="Discord logo" width="16" height="16"></a>
-            <a href="#"><img src="images/github.svg" alt="GitHub logo" width="16" height="16"></a>
-            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16"></a>
-            <a href="#"><img src="images/pinterest.svg" alt="Pinterest logo" width="16" height="16"></a>
+            <a href="#"><img src="images/discord.svg" alt="Discord logo" width="20" height="20"></a>
+            <a href="#"><img src="images/github.svg" alt="GitHub logo" width="20" height="20"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn logo" width="20" height="20"></a>
+            <a href="#"><img src="images/pinterest.svg" alt="Pinterest logo" width="20" height="20"></a>
         </div>
         <div class="wdd-info">
             <span>WDD 231 Final Project</span>
