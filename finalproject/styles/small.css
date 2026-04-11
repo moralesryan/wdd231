@@ -1,8 +1,78 @@
-:root {
-    --main-color: #044389;
-    --secondary-color: #BFDBF7;
-    --tertiary-color: #E1E5F2;
-    --color-accent: #FFFFFF;
-    --background-color: #985F6F;
-    font-family: 'Google Sans', sans-serif;
+@media (max-width: 599px) {
+    body {
+        margin: 0;
+    }
+
+    section {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    span {
+        display: block;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    header span {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .highlights-container,
+    .team-container,
+    .reviews-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .review {
+        border-radius: 20px;
+        padding: 1.5rem;
+        max-width: 350px;
+        margin: 1rem;
+    }
+
+    .review-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 1rem 0;
+    }
+
+    .review p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation ul {
+        padding: 0;
+    }
+
+    .navigation li {
+        margin: 1rem 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
 }

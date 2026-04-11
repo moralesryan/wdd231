@@ -30,7 +30,13 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
+
+
     <!--JS/MJS Files-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/last-modified.js" defer></script>
+
+
 
     <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,16 +56,16 @@
 
     <nav class="navigation" id="navigation">
         <ul>
-            <li class="current"><a>Home</a></li>
-            <li><a>Pathfinder</a></li>
-            <li><a>Join Us</a></li><!--Join the Journey-->
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Pathfinder</a></li>
+            <li><a href="#">Join Us</a></li><!--Join the Journey-->
         </ul>
     </nav>
 
     <main>
         <section class="hero">
             <h1>Hike Together!</h1>
-            <img src="images/hero1.jpg" alt="" loading="lazy" width="600" height="400">
+            <img src="images/hero1.jpg" alt="Hike Together" loading="lazy" width="600" height="400">
             <p>
                 Welcome to Hike Together, an initiative that offers guided tours for those with adventurous spirits. If
                 you are a pro hiker or a beginner, we have the perfect tour for you! Our platform allows users to
@@ -73,22 +79,22 @@
             <div class="highlights-container">
                 <div class="highlight">
                     <h2>Lets Hike Together</h2>
-                    <img src="images/image2.jpg" alt="" loading="lazy" width="220" height="140">
+                    <img src="images/image2.jpg" alt="Lets Hike Together" loading="lazy" width="220" height="140">
                     <p>Join us for an unforgettable hiking experience!</p>
                 </div>
                 <div class="highlight">
                     <h2>Connect with others</h2>
-                    <img src="images/image1.jpg" alt="" loading="lazy" width="220" height="140">
+                    <img src="images/image1.jpg" alt="Connect with others" loading="lazy" width="220" height="140">
                     <p>Meet fellow hiking enthusiasts and share your adventures!</p>
                 </div>
                 <div class="highlight">
                     <h2>Explore Costa Rica</h2>
-                    <img src="images/image3.jpg" alt="" loading="lazy" width="220" height="140">
+                    <img src="images/image3.jpg" alt="Explore Costa Rica" loading="lazy" width="220" height="140">
                     <p>Discover the breathtaking landscapes of Costa Rica!</p>
                 </div>
                 <div class="highlight">
                     <h2>Join the Journey</h2>
-                    <img src="images/image4.jpg" alt="" loading="lazy" width="220" height="140">
+                    <img src="images/image4.jpg" alt="Join the Journey" loading="lazy" width="220" height="140">
                     <p>Embark on a journey of adventure with us!</p>
                 </div>
             </div>
@@ -96,41 +102,52 @@
 
         <section class="team">
             <span>Get to know our Team</span>
-
             <div class="team-container">
                 <div class="team-member">
-                    <h2>Team Member 1</h2>
+                    <h2>Maribel</h2>
                     <img src="images/hiker1.jpg" alt="Maribel Tour Guide" loading="lazy" width="250" height="200">
+                    <p>Maribel is an experienced guide who loves sharing her passion for nature with others.</p>
                 </div>
                 <div class="team-member">
-                    <h2>Team Member 2</h2>
+                    <h2>Asdrubal</h2>
                     <img src="images/hiker2.jpg" alt="Asdrubal Tour Guide" loading="lazy" width="250" height="200">
+                    <p>Asdrubal is known for his extensive knowledge of Costa Rica's trails and wildlife.</p>
                 </div>
                 <div class="team-member">
-                    <h2>Team Member 3</h2>
+                    <h2>Anastacio</h2>
                     <img src="images/hiker3.jpg" alt="Anastacio Tour Guide" loading="lazy" width="250" height="200">
+                    <p>Anastacio is a passionate hiker who enjoys leading groups through the beautiful landscapes of
+                        Costa Rica.</p>
                 </div>
+            </div>
         </section>
 
         <section class="reviews">
+            <span>What Our Clients Say</span>
             <div class="reviews-container">
                 <div class="review">
-                    <h2>Review 1</h2>
-                    <img src="images/review1.jpeg" alt="" loading="lazy" width="150" height="100">
-                    <p>"Hike Together made my trip unforgettable! The guides were knowledgeable and the scenery was
-                        breathtaking."</p>
+                    <h2>Malcom</h2>
+                    <img class="review-img" src="images/review1.jpeg" alt="Malcom" loading="lazy" width="150"
+                        height="100">
+                    <p>"Hike Together made my trip unforgettable! The guides were knowledgeable and kind."</p>
+                    <div class="stars">★★★★★</div>
                 </div>
                 <div class="review">
-                    <h2>Review 2</h2>
-                    <img src="images/review2.jpg" alt="" loading="lazy" width="150" height="100">
+                    <h2>Lemonjello</h2>
+                    <img class="review-img" src="images/review2.jpg" alt="Lemonjello" loading="lazy" width="150"
+                        height="100">
                     <p>"I had an amazing experience with Hike Together. The trails were stunning and the community was
                         so welcoming."</p>
+                    <div class="stars">★★★★★</div>
                 </div>
                 <div class="review">
-                    <h2>Review 3</h2>
-                    <img src="images/review3.jpg" alt="" loading="lazy" width="150" height="100">
+                    <h2>Carlie</h2>
+                    <img class="review-img" src="images/review3.jpg" alt="Carlie" loading="lazy" width="150"
+                        height="100">
                     <p>"Hike Together is the best! I met so many great people and the hikes were well organized."</p>
+                    <div class="stars">★★★★★</div>
                 </div>
+            </div>
         </section>
 
     </main>
