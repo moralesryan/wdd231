@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Hike Together!</title>
+
+    <!--Meta tags-->
+    <meta name="author" content="Ryan Morales | WDD 231 | Final Project">
+    <meta name="description"
+        content="Join Hike Together is a call to action for those who want to be part of our hiking community. By joining, users can connect with other hikers, share their experiences, and participate in guided tours. The platform will also provide resources and tips for hiking in Costa Rica. Whether you're a seasoned hiker or just starting out, Join Hike Together is the perfect place to find your next adventure.">
+    <!--FavIcon-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--Social Media meta tags-->
+    <meta property="og:title" content="Hike Together! | Ryan Morales | WDD231">
+    <!--description-->
+    <meta property="og:description"
+        content="Join Hike Together is a call to action for those who want to be part of our hiking community. By joining, users can connect with other hikers, share their experiences, and participate in guided tours. The platform will also provide resources and tips for hiking in Costa Rica. Whether you're a seasoned hiker or just starting out, Join Hike Together is the perfect place to find your next adventure.">
+    <!--image-->
+    <meta property="og:image" content="https://moralesryan.github.io/wdd231/finalproject/images/ogimage.jpg">
+    <!--url-->
+    <meta property="og:url" content="https://moralesryan.github.io/wdd231/finalproject/index.html">
+    <!--type-->
+    <meta property="og:type" content="website">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+
+    <!--JS/MJS Files-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/last-modified.js" defer></script>
+
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="Hike Together Logo" loading="lazy" width="50" height="50">
+        <span>Hike Together!</span>
+        <button class="hamburger" id="ham-btn" aria-label="Open navigation menu"></button>
+    </header>
+
+    <nav class="navigation" id="navigation">
+        <ul>
+            <li class="current"><a href="index.html">📍 Home</a></li>
+            <li><a href="pathfinder.html">Pathfinder</a></li>
+            <li><a href="join-us.html">Join Us</a></li><!--Join the Journey-->
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Join Hike Together!</h1>
+            <p>Be part of our hiking community and connect with fellow adventurers. Share your experiences, participate
+                in guided tours, and access resources for hiking in Costa Rica. Whether you're a seasoned hiker or just
+                starting out, Join Hike Together is the perfect place to find your next adventure.</p>
+            <a href="index.html" class="cta-button">Join Now</a>
+        </section>
+
+        <form class="join-form" action="#" method="post">
+            <h2>Sign Up for Hike Together!</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="experience">Hiking Experience:</label>
+            <select id="experience" name="experience">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <button type="submit">Join Now</button>
+        </form>
+
+        <section class="benefits">
+            <h2>Benefits of Joining Hike Together</h2>
+            <ul>
+                <li>Connect with a community of hikers</li>
+                <li>Access to guided tours and resources</li>
+                <li>Share your hiking experiences and tips</li>
+                <li>Discover new trails and adventures in Costa Rica</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="wdd-info">
+            <span>WDD 231 Final Project</span>
+            <span>Ryan Morales</span>
+            <span>https://www.loom.com/share/9d1dc3808c28462aabdc0ff8f1b26fbd</span>
+            <span id="currentDates"></span>
+            <span id="lastModified"></span>
+        </div>
+        <div class="social">
+            <a href="#"><img src="images/discord.svg" alt="Discord logo" width="20" height="20"></a>
+            <a href="#"><img src="images/github.svg" alt="GitHub logo" width="20" height="20"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn logo" width="20" height="20"></a>
+            <a href="#"><img src="images/pinterest.svg" alt="Pinterest logo" width="20" height="20"></a>
+        </div>
+
+    </footer>
+
+</body>

@@ -3,6 +3,13 @@
         margin: 0;
     }
 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
     section {
         padding: 2rem 1rem;
         text-align: center;
@@ -12,6 +19,13 @@
         display: block;
         font-size: 2.4rem;
         margin-bottom: 1rem;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .hero img {
@@ -31,8 +45,9 @@
     .highlights-container,
     .team-container,
     .reviews-container {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .review {
@@ -43,11 +58,13 @@
     }
 
     .review-img {
-        width: 120px;
-        height: 120px;
+        width: 200px;
+        height: 200px;
+        min-width: 200px;
+        min-height: 200px;
         border-radius: 50%;
         object-fit: cover;
-        margin: 1rem 0;
+        display: block;
     }
 
     .review p {
@@ -55,24 +72,63 @@
         line-height: 1.5;
     }
 
-
     .navigation {
         display: none;
     }
 
     .navigation ul {
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .navigation li {
         margin: 1rem 0;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+
     }
 
-    header {
+    .navigation a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.show {
+        display: block;
+    }
+
+    .hamburger {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        justify-content: center;
+        border: none;
+        border-radius: 10px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.2s ease, transform 0.1s ease;
     }
 
+    .hamburger::before {
+        content: "\2630";
+        font-size: 1.8rem;
+        color: var(--main-color);
+        line-height: 1;
+    }
+
+    .hamburger.show::before {
+        content: "\00D7";
+    }
+
+    .hamburger:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+    }
+
+    .hamburger:active {
+        transform: scale(0.95);
+    }
 }

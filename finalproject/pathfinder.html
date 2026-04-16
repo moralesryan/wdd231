@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder</title>
+
+    <!--Meta tags-->
+    <meta name="author" content="Ryan Morales | WDD 231 | Final Project">
+    <meta name="description"
+        content="Pathfinder is a feature that allows users to find hiking trails based on their preferences. Users can filter trails by difficulty, length, and location. The feature will also provide information about the trail, such as elevation gain, estimated time, and user reviews. This will help users find the perfect trail for their next adventure.">
+
+    <!--FavIcon-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--Social Media meta tags-->
+    <meta property="og:title" content="Hike Together! | Ryan Morales | WDD231">
+    <!--description-->
+    <meta property="og:description"
+        content="Pathfinder is a feature that allows users to find hiking trails based on their preferences. Users can filter trails by difficulty, length, and location. The feature will also provide information about the trail, such as elevation gain, estimated time, and user reviews. This will help users find the perfect trail for their next adventure.">
+    <!--image-->
+    <meta property="og:image" content="https://moralesryan.github.io/wdd231/finalproject/images/ogimage.jpg">
+    <!--url-->
+    <meta property="og:url" content="https://moralesryan.github.io/wdd231/finalproject/index.html">
+    <!--type-->
+    <meta property="og:type" content="website">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+
+    <!--JS/MJS Files-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/last-modified.js" defer></script>
+    <script type="module" src="scripts/hikes.js" defer></script>
+
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="Hike Together Logo" loading="lazy" width="50" height="50">
+        <span>Hike Together!</span>
+        <button class="hamburger" id="ham-btn" aria-label="Open navigation menu"></button>
+    </header>
+
+    <nav class="navigation" id="navigation">
+        <ul>
+            <li class="current"><a href="index.html">📍 Home</a></li>
+            <li><a href="pathfinder.html">Pathfinder</a></li>
+            <li><a href="join-us.html">Join Us</a></li><!--Join the Journey-->
+        </ul>
+    </nav>
+
+    <div class="hikes" id="hikes"></div>
+
+    <footer>
+        <div class="wdd-info">
+            <span>WDD 231 Final Project</span>
+            <span>Ryan Morales</span>
+            <span>https://www.loom.com/share/9d1dc3808c28462aabdc0ff8f1b26fbd</span>
+            <span id="currentDates"></span>
+            <span id="lastModified"></span>
+        </div>
+        <div class="social">
+            <a href="#"><img src="images/discord.svg" alt="Discord logo" width="20" height="20"></a>
+            <a href="#"><img src="images/github.svg" alt="GitHub logo" width="20" height="20"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn logo" width="20" height="20"></a>
+            <a href="#"><img src="images/pinterest.svg" alt="Pinterest logo" width="20" height="20"></a>
+        </div>
+
+    </footer>
+
+</body>
