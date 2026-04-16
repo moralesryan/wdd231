@@ -131,4 +131,11 @@
     .hamburger:active {
         transform: scale(0.95);
     }
+
+    .wdd-info span {
+        display: block;
+        overflow: hidden;
+        word-break: break-all;
+        max-width: 100%;
+    }
 }
